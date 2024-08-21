@@ -24,7 +24,7 @@ yahoo_finance_tools = Tool(
 #IMPORTANDO OPENAI LLM GPT
 os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 #"sk-proj-bn9bCANK2FZ7calz5wHST3BlbkFJlqR39Gl1XUugv7BVVzGu"
-llm = ChatOpenAI(model="gpt-3.5-turbo-1106", temperature=0.1, max_tokens=20000)
+llm = ChatOpenAI(model="gpt-3.5-turbo-1106", temperature=0.1, max_tokens=12000)
 
 stock_price_agent = Agent(
     role="Senior stock price analyst",
